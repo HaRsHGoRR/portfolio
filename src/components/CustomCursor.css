@@ -1,0 +1,56 @@
+/* Custom Cursor Styles */
+.custom-cursor {
+  position: fixed;
+  width: 12px;
+  height: 12px;
+  background: #00f5ff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  transition: all 0.1s ease;
+  box-shadow: 0 0 20px #00f5ff;
+}
+
+.custom-cursor.hover {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #ff0080;
+  box-shadow: 0 0 30px #ff0080;
+}
+
+.custom-cursor.clicking {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: #00ff41;
+  box-shadow: 0 0 25px #00ff41;
+}
+
+.cursor-trail {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 245, 255, 0.3);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transition: all 0.3s ease;
+}
+
+.cursor-trail.hover {
+  width: 60px;
+  height: 60px;
+  border-color: rgba(255, 0, 128, 0.3);
+}
+
+.cursor-trail.clicking {
+  transform: translate(-50%, -50%) scale(1.2);
+  border-color: rgba(0, 255, 65, 0.5);
+}
+
+@media (max-width: 768px) {
+  .custom-cursor,
+  .cursor-trail {
+    display: none;
+  }
+}
