@@ -7,7 +7,7 @@ const Education = () => {
       year: '2021 - 2025',
       degree: 'Bachelor of Technology',
       field: 'Information Technology',
-      institution: 'Gujarat Technological University',
+      institution: 'Dharmsinh Desai University - DDU',
       gpa: '7.9 CGPA',
       achievements: [
         'Dean\'s List for Academic Excellence',
